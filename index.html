@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/a14de5c9f2.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Ecommerce</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="navbar">
+        <a class="navbar-brand" href="#">B4Buy</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Catagories
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="./product.html">Kids</a>
+                        <a class="dropdown-item" href="./product.html">Men</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="./product.html">Women</a>
+                    </div>
+                </li>
+
+            </ul>
+            <div class="search-bar">
+                <form class="form-inline my-2 my-lg-0 ">
+                    <input class="form-control mr-sm-2 " type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+
+        </div>
+        <form class="form-inline mt-2">
+
+            <div class="input-group mb-2 mr-sm-2">
+                <label class="sr-only h-75" for="inlineFormInputGroupUsername2">Username</label>
+                <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputGroupUsername2"
+                    placeholder="Username">
+
+            </div>
+            <div id="submit">
+                <div class="input-group mb-2 mr-sm-2">
+                    <label class="sr-only h-75" for="inlineFormInputName2">Name</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
+                        placeholder="Password">
+                </div>
+
+
+                <button type="submit" class="btn btn-outline-success h-25">Sign In</button>
+            </div>
+
+        </form>
+    </nav>
+
+    <div id="carouselExampleSlidesOnly h-50" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner h-25">
+            <div class="carousel-item active h-75">
+                <img class="d-block heroimage img-fluid" src="./Assets/slide1.jpg" alt="First slide">
+            </div>
+            <div class="carousel-item h-75">
+                <img class="d-block heroimage img-fluid" src="./Assets/slide2.jpg" alt="Second slide">
+            </div>
+            <div class="carousel-item h-75">
+                <img class="d-block heroimage img-fluid" src="./Assets/slide3.jpg" alt="Third slide">
+            </div>
+            <div class="carousel-item h-75">
+                <img class="d-block heroimage img-fluid" src="./Assets/slide4.jpg" alt="Third slide">
+            </div>
+        </div>
+    </div>
+    <div class="container mt-1 ">
+        <h2 class="font-weight-bold">Featured</h2>
+        <div class="row justify-content-between">
+
+            <div class="col-md-3">
+                <div class="product-wrapper mb-45 text-center">
+
+                    <div class="product-img"> <a href="#" data-abc="true"> <img src="./Assets/catagories (1).jpg"
+                        alt=""> </a> <span
+                            class="text-lg-center"><i class="fa fa-rupee"></i> 43,000</span>
+                        <div class="product-action">
+                            <div class="product-action-style"> <a href="#"> <i class="fa fa-plus"></i> </a> <a href="#">
+                                    <i class="fa fa-heart"></i> </a> <a href="#"> <i class="fa fa-shopping-cart"></i>
+                                </a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <div class="product-wrapper mb-45 text-center">
+                    <div class="product-img"> <a href="#" data-abc="true"> <img src="./Assets/catagories (1).jpg"
+                                alt=""> </a> <span><i class="fa fa-rupee"></i> 41,000</span>
+                        <div class="product-action">
+                            <div class="product-action-style"> <a class="action-plus" title="Quick View"
+                                    data-toggle="modal" data-target="#exampleModal" href="#" data-abc="true"> <i
+                                        class="fa fa-plus"></i> </a> <a class="action-heart" title="Wishlist" href="#"
+                                    data-abc="true"> <i class="fa fa-heart"></i> </a> <a class="action-cart"
+                                    title="Add To Cart" href="#" data-abc="true"> <i
+                                        class="fa fa-shopping-cart details"></i>
+                                </a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-wrapper mb-45 text-center">
+                    <div class="product-img"> <a href="#" data-abc="true"> <img src="./Assets/catagories (1).jpg" 
+                        alt=""> </a> <span><i class="fa fa-rupee"></i> 33,000</span>
+                        <div class="product-action">
+                            <div class="product-action-style"> <a class="action-plus" title="Quick View"
+                                    data-toggle="modal" data-target="#exampleModal" href="#" data-abc="true"> <i
+                                        class="fa fa-plus"></i> </a> <a class="action-heart" title="Wishlist" href="#"
+                                    data-abc="true"> <i class="fa fa-heart"></i> </a> <a class="action-cart"
+                                    title="Add To Cart" href="#" data-abc="true"> <i
+                                        class="fa fa-shopping-cart details"></i>
+                                </a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="product-wrapper mb-45 text-center">
+                    <div class="product-img"> <a href="#" data-abc="true"> <img src="./Assets/catagories (1).jpg"
+                         alt=""> </a> <span><i class="fa fa-rupee"></i> 23,000</span>
+                        <div class="product-action">
+                            <div class="product-action-style"> <a class="action-plus" title="Quick View"
+                                    data-toggle="modal" data-target="#exampleModal" href="#" data-abc="true"> <i
+                                        class="fa fa-plus"></i> </a> <a class="action-heart" title="Wishlist" href="#"
+                                    data-abc="true"> <i class="fa fa-heart"></i> </a> <a class="action-cart"
+                                    title="Add To Cart" href="#" data-abc="true"> <i
+                                        class="fa fa-shopping-cart details"></i>
+                                </a> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="font-weight-bold">Catagories</h2>
+    <div class='container-fluid catagories-div'>
+
+        <div class="card text-white bg-dark col-md-2 col-10 mt-3">
+            <img class='mx-auto img-thumbnail' src="./Assets/catagories.jpg" width="auto" height="auto" />
+            <div class="card-body text-center mx-auto">
+                <div class='cvp'>
+                    <h5 class="card-title font-weight-bold">Yail wrist watch</h5>
+                    <p class="card-text">$299</p>
+                    <a href="#" class="btn details px-auto details">view details</a><br />
+                    <a href="#" class="btn cart px-auto fa-solid fa-cart-shopping">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="card text-white bg-dark col-md-2 col-10 mt-3">
+            <img class='mx-auto img-thumbnail' src="./Assets/catagories.jpg" width="auto" height="auto" />
+            <div class="card-body text-center mx-auto">
+                <div class='cvp'>
+                    <h5 class="card-title font-weight-bold">Yail wrist watch</h5>
+                    <p class="card-text">$299</p>
+                    <a href="#" class="btn details px-auto details">view details</a><br />
+                    <a href="#" class="btn cart px-auto fa-solid fa-cart-shopping">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+        <div class="card text-white bg-dark col-md-2 col-10 mt-3">
+            <img class='mx-auto img-thumbnail' src="./Assets/catagories.jpg" width="auto" height="auto" />
+            <div class="card-body text-center mx-auto">
+                <div class='cvp'>
+                    <h5 class="card-title font-weight-bold">Yail wrist watch</h5>
+                    <p class="card-text">$299</p>
+                    <a href="#" class="btn details px-auto details">view details</a><br />
+                    <a href="#" class="btn cart px-auto fa-solid fa-cart-shopping">ADD TO CART</a>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+    <div class="container1">
+        <div class="tags">
+
+            <a href="#">stream millions of songs</a>
+            <a href="#">Everything for your business</a>
+            <a href="#">box office mojo</a>
+            <a href="#">Kindle direct publishing</a>
+
+        </div>
+        <div class="tags">
+
+            <a href="#">Amazon Advertising</a>
+            <a href="#">Amazon global</a>
+            <a href="#">comiXology</a>
+            <a href="#">Prime video direct</a>
+            <a href="#">Blink</a>
+
+        </div>
+        <div class="tags">
+
+            <a href="#">Amazon Drive</a>
+            <a href="#">Home Services</a>
+            <a href="#">DP Review</a>
+            <a href="#">ShopDop</a>
+
+        </div>
+        <div class="tags">
+            <a href="#">6PM</a>
+            <a href="#">Amazon Ignites</a>
+            <a href="#">Fabric</a>
+            <a href="#">Woot!</a>
+            <a href="#">Amazon Subscription</a>
+
+        </div>
+        <div class="tags">
+            <a href="#">AbeBooks</a>
+            <a href="#">Amazon Web Service</a>
+            <a href="#">Goodreads</a>
+            <a href="#">Zappos</a>
+            <a href="#">PillPack</a>
+
+        </div>
+        <div class="tags">
+            <a href="#">ACX</a>
+            <a href="#">Audible</a>
+            <a href="#">IMDb</a>
+            <a href="#">Ring</a>
+
+
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
